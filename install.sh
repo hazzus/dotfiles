@@ -10,6 +10,11 @@ ssh-add ~/.ssh/id_auto
 cat ~/.ssh/id_auto.pub
 read -n 1 -p "^Insert this to github ssh keys and press Enter" _
 
+
+echo "Downloading self repo"
+git clone git@github.com:hazzus/dotfiles.git
+cd dotfiles
+
 echo "Installing zsh & ohmyzsh"
 sudo dnf install -y zsh wget neofetch
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
