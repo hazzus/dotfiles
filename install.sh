@@ -48,4 +48,11 @@ cp vim/my_configs.vim ~/vim_runtime
 
 
 echo "Installing sddm minimal theme"
-#todu
+git clone git@github.com:stepanzubkov/where-is-my-sddm-theme.git theme-git
+sudo cp -r theme/where_is_my_sddm_theme /usr/share/sddm/themes/wimst
+rm -rf theme-git
+wget -O flowers.png "https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?cs=srgb&dl=pexels-lisa-fotios-1083822.jpg&fm=jpg&w=6000&h=4000&_gl=1*yycnmr*_ga*OTA1OTg2NDM1LjE2ODgyOTcwNTI.*_ga_8JE65Q40S6*MTY4ODI5NzA1MS4xLjEuMTY4ODI5NzQ2Ny4wLjAuMA.."
+sudo mv flowers.png /usr/share/sddm/themes/wimst
+sudo cp sddm/theme.conf /usr/share/sddm/themes/wimst
+sudo cp sddm/sddm.conf /etc
+
