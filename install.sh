@@ -73,6 +73,8 @@ echo "Changing some userdirs"
 cp userdirs/user-dirs.dirs ~/.config/
 
 echo "Configuring sway"
-# todo
+mkdir -p ~/.config/sway
+cp sway/config ~/.config/sway
 
 echo "Configuring swaybar"
+# todo
