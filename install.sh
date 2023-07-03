@@ -69,6 +69,9 @@ mkdir -p ~/.swaylock
 cp swaylock/config ~/.swaylock
 
 
+echo "Changing some userdirs"
+cp userdirs/user-dirs.dirs ~/.config/
+
 echo "Configuring sway"
 # todo
 
