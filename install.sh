@@ -72,3 +72,4 @@ cp swaylock/config ~/.swaylock
 echo "Configuring sway"
 # todo
 
+echo "Configuring swaybar"

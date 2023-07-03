@@ -1,7 +1,7 @@
 ignore-empty-password
 
 image=/home/hazzus/Pictures/wallpapers/blurred_flowers.jpg
-indicator-radius=100
+indicator-radius=160
 indicator-thickness=20
 indicator-caps-lock
 
@@ -31,8 +31,8 @@ text-clear-color=ffd20400
 text-ver-color=d9d8d800
 text-wrong-color=ee2e2400
 
-bs-hl-color=fffefeFF
+bs-hl-color=ffc3d9FF
 caps-lock-key-hl-color=ffd204FF
-caps-lock-bs-hl-color=fffefeFF
+caps-lock-bs-hl-color=ffc3d9FF
 disable-caps-lock-text
 text-caps-lock-color=009ddc
