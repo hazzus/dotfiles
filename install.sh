@@ -15,11 +15,12 @@ echo "Downloading self repo"
 git clone git@github.com:hazzus/dotfiles.git
 cd dotfiles
 
+
 echo "Installing zsh & ohmyzsh"
 sudo dnf install -y zsh wget neofetch
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cp zsh/.zshrc ~
+cp zsh/zshrc ~/.zshrc
 
 
 echo "Installing IBM plex mono fonts"
@@ -55,4 +56,12 @@ wget -O flowers.png "https://images.pexels.com/photos/1083822/pexels-photo-10838
 sudo mv flowers.png /usr/share/sddm/themes/wimst
 sudo cp sddm/theme.conf /usr/share/sddm/themes/wimst
 sudo cp sddm/sddm.conf /etc
+
+
+echo "Configuring swaylock"
+# todo
+
+
+echo "Configuring sway"
+# todo
 
