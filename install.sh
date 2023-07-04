@@ -78,4 +78,4 @@ mkdir -p ~/.config/sway
 cp -r sway ~/.config
 
 echo "Configuring swaybar"
-# todo
+cp -r waybar ~/.config
