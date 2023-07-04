@@ -14,6 +14,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 # TODO perks for many monitors swaymsg -t get_inputs
 output * bg /home/hazzus/Pictures/wallpapers/flowers.jpg fill
 
+# TODO system settings mode
 
 # lock & sleep shortcuts
 set $lock_timeout 600
