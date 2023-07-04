@@ -14,14 +14,11 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 # TODO perks for many monitors swaymsg -t get_inputs
 output * bg /home/hazzus/Pictures/wallpapers/flowers.jpg fill
 
-### Idle config
-# TODO perks what do i need from startup etc
-exec swayidle -w \
-        timeout 600 'swaylock -f' \
-        timeout 660 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-        before-sleep 'swaylock -f'
 
 # lock & sleep shortcuts
+set $lock_timeout 600
+set $screen_timeout 60
+
 bindsym --to-code {
     $mod+period exec swaylock -f
     --locked $mod+Shift+period exec systemctl suspend
@@ -33,12 +30,30 @@ input * {
     xkb_options "grp:lalt_lshift_toggle"
 }
 
-### Some useful shortcuts
+### Some useful app shortcuts
 bindsym --to-code {
     $mod+semicolon exec firefox
     $mod+apostrophe exec $term -e htop
     $mod+bracketleft exec $term -e vim
 }
+
+### Touchpad gestures for workspaces
+bindgesture {
+    swipe:3:right workspace next
+    swipe:3:left workspace prev
+}
+### Keys for workspaces
+bindsym {
+    $mod+Prior workspace prev
+    $mod+Next workspace next
+}
+
+### Visual
+gaps {
+    outer 5
+    inner 3
+}
+
 
 ### After this point, default configuration is used, but binded to codes
 

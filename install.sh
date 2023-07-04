@@ -73,8 +73,9 @@ echo "Changing some userdirs"
 cp userdirs/user-dirs.dirs ~/.config/
 
 echo "Configuring sway"
+sudo dnf install -y htop
 mkdir -p ~/.config/sway
-cp sway/config ~/.config/sway
+cp -r sway ~/.config
 
 echo "Configuring swaybar"
 # todo
